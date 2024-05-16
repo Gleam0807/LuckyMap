@@ -32,8 +32,7 @@ class MapView: UIView{
     func setUI() {
         naverMapView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(0)
-            make.leading.trailing.equalTo(self.safeAreaLayoutGuide).offset(0)
-            make.bottom.equalTo(self.safeAreaLayoutGuide).inset(32)
+            make.leading.trailing.bottom.equalTo(self.safeAreaLayoutGuide).offset(0)
         }
     }
 }

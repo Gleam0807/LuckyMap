@@ -7,48 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323F6A612BF5EC5C00C72CC6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F6A602BF5EC5C00C72CC6 /* TabBarViewController.swift */; };
+		323F6A642BF5ECDB00C72CC6 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F6A632BF5ECDB00C72CC6 /* LottoViewController.swift */; };
 		324CB1BE2BF5C3F80048852E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CB1BD2BF5C3F80048852E /* AppDelegate.swift */; };
 		324CB1C02BF5C3F80048852E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CB1BF2BF5C3F80048852E /* SceneDelegate.swift */; };
 		324CB1C22BF5C3F80048852E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CB1C12BF5C3F80048852E /* ViewController.swift */; };
-		324CB1C52BF5C3F80048852E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 324CB1C42BF5C3F80048852E /* Base */; };
 		324CB1C72BF5C3F90048852E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324CB1C62BF5C3F90048852E /* Assets.xcassets */; };
 		324CB1CA2BF5C3F90048852E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 324CB1C92BF5C3F90048852E /* Base */; };
-		324CB1D52BF5C3F90048852E /* LuckyMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CB1D42BF5C3F90048852E /* LuckyMapTests.swift */; };
-		324CB1DF2BF5C3F90048852E /* LuckyMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CB1DE2BF5C3F90048852E /* LuckyMapUITests.swift */; };
-		324CB1E12BF5C3F90048852E /* LuckyMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CB1E02BF5C3F90048852E /* LuckyMapUITestsLaunchTests.swift */; };
+		324CB1EE2BF5C4CE0048852E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CB1ED2BF5C4CE0048852E /* MapView.swift */; };
+		8080FA7D33B1C68D3716D68E /* Pods_LuckyMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0D440D92E56ED3C33C092C /* Pods_LuckyMap.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		324CB1D12BF5C3F90048852E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 324CB1B22BF5C3F80048852E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 324CB1B92BF5C3F80048852E;
-			remoteInfo = LuckyMap;
-		};
-		324CB1DB2BF5C3F90048852E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 324CB1B22BF5C3F80048852E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 324CB1B92BF5C3F80048852E;
-			remoteInfo = LuckyMap;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		0E3DDFD373E6D0B78806CA2A /* Pods-LuckyMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyMap.debug.xcconfig"; path = "Target Support Files/Pods-LuckyMap/Pods-LuckyMap.debug.xcconfig"; sourceTree = "<group>"; };
+		323F6A602BF5EC5C00C72CC6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		323F6A632BF5ECDB00C72CC6 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		324CB1BA2BF5C3F80048852E /* LuckyMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324CB1BD2BF5C3F80048852E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		324CB1BF2BF5C3F80048852E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		324CB1C12BF5C3F80048852E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		324CB1C42BF5C3F80048852E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		324CB1C62BF5C3F90048852E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		324CB1C92BF5C3F90048852E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		324CB1CB2BF5C3F90048852E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		324CB1D02BF5C3F90048852E /* LuckyMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		324CB1D42BF5C3F90048852E /* LuckyMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyMapTests.swift; sourceTree = "<group>"; };
-		324CB1DA2BF5C3F90048852E /* LuckyMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		324CB1DE2BF5C3F90048852E /* LuckyMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyMapUITests.swift; sourceTree = "<group>"; };
-		324CB1E02BF5C3F90048852E /* LuckyMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		324CB1ED2BF5C4CE0048852E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		45B39874B5059897B65CEA14 /* Pods-LuckyMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyMap.release.xcconfig"; path = "Target Support Files/Pods-LuckyMap/Pods-LuckyMap.release.xcconfig"; sourceTree = "<group>"; };
+		4A0D440D92E56ED3C33C092C /* Pods_LuckyMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,33 +39,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		324CB1CD2BF5C3F90048852E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		324CB1D72BF5C3F90048852E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				8080FA7D33B1C68D3716D68E /* Pods_LuckyMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09D86DEEB615E25F7A2DAD39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E3DDFD373E6D0B78806CA2A /* Pods-LuckyMap.debug.xcconfig */,
+				45B39874B5059897B65CEA14 /* Pods-LuckyMap.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		323F6A5B2BF5E9EE00C72CC6 /* Featrue */ = {
+			isa = PBXGroup;
+			children = (
+				323F6A622BF5ECB700C72CC6 /* Lotto */,
+				323F6A5E2BF5EBEC00C72CC6 /* TabBar */,
+				323F6A5D2BF5EBC700C72CC6 /* Map */,
+			);
+			path = Featrue;
+			sourceTree = "<group>";
+		};
+		323F6A5C2BF5EA0B00C72CC6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				324CB1C82BF5C3F90048852E /* LaunchScreen.storyboard */,
+				324CB1C62BF5C3F90048852E /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		323F6A5D2BF5EBC700C72CC6 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				324CB1C12BF5C3F80048852E /* ViewController.swift */,
+				324CB1ED2BF5C4CE0048852E /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		323F6A5E2BF5EBEC00C72CC6 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				323F6A602BF5EC5C00C72CC6 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		323F6A622BF5ECB700C72CC6 /* Lotto */ = {
+			isa = PBXGroup;
+			children = (
+				323F6A632BF5ECDB00C72CC6 /* LottoViewController.swift */,
+			);
+			path = Lotto;
+			sourceTree = "<group>";
+		};
 		324CB1B12BF5C3F80048852E = {
 			isa = PBXGroup;
 			children = (
 				324CB1BC2BF5C3F80048852E /* LuckyMap */,
-				324CB1D32BF5C3F90048852E /* LuckyMapTests */,
-				324CB1DD2BF5C3F90048852E /* LuckyMapUITests */,
 				324CB1BB2BF5C3F80048852E /* Products */,
+				09D86DEEB615E25F7A2DAD39 /* Pods */,
+				B80AB7BDBD839F0709951F2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,8 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				324CB1BA2BF5C3F80048852E /* LuckyMap.app */,
-				324CB1D02BF5C3F90048852E /* LuckyMapTests.xctest */,
-				324CB1DA2BF5C3F90048852E /* LuckyMapUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,32 +120,21 @@
 		324CB1BC2BF5C3F80048852E /* LuckyMap */ = {
 			isa = PBXGroup;
 			children = (
+				323F6A5C2BF5EA0B00C72CC6 /* Resource */,
+				323F6A5B2BF5E9EE00C72CC6 /* Featrue */,
 				324CB1BD2BF5C3F80048852E /* AppDelegate.swift */,
 				324CB1BF2BF5C3F80048852E /* SceneDelegate.swift */,
-				324CB1C12BF5C3F80048852E /* ViewController.swift */,
-				324CB1C32BF5C3F80048852E /* Main.storyboard */,
-				324CB1C62BF5C3F90048852E /* Assets.xcassets */,
-				324CB1C82BF5C3F90048852E /* LaunchScreen.storyboard */,
 				324CB1CB2BF5C3F90048852E /* Info.plist */,
 			);
 			path = LuckyMap;
 			sourceTree = "<group>";
 		};
-		324CB1D32BF5C3F90048852E /* LuckyMapTests */ = {
+		B80AB7BDBD839F0709951F2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				324CB1D42BF5C3F90048852E /* LuckyMapTests.swift */,
+				4A0D440D92E56ED3C33C092C /* Pods_LuckyMap.framework */,
 			);
-			path = LuckyMapTests;
-			sourceTree = "<group>";
-		};
-		324CB1DD2BF5C3F90048852E /* LuckyMapUITests */ = {
-			isa = PBXGroup;
-			children = (
-				324CB1DE2BF5C3F90048852E /* LuckyMapUITests.swift */,
-				324CB1E02BF5C3F90048852E /* LuckyMapUITestsLaunchTests.swift */,
-			);
-			path = LuckyMapUITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,54 +144,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 324CB1E42BF5C3F90048852E /* Build configuration list for PBXNativeTarget "LuckyMap" */;
 			buildPhases = (
+				98BA44604F85750779C4B0BC /* [CP] Check Pods Manifest.lock */,
 				324CB1B62BF5C3F80048852E /* Sources */,
 				324CB1B72BF5C3F80048852E /* Frameworks */,
 				324CB1B82BF5C3F80048852E /* Resources */,
+				DB524EA9568008426445BC7F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LuckyMap;
+			packageProductDependencies = (
+			);
 			productName = LuckyMap;
 			productReference = 324CB1BA2BF5C3F80048852E /* LuckyMap.app */;
 			productType = "com.apple.product-type.application";
-		};
-		324CB1CF2BF5C3F90048852E /* LuckyMapTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 324CB1E72BF5C3F90048852E /* Build configuration list for PBXNativeTarget "LuckyMapTests" */;
-			buildPhases = (
-				324CB1CC2BF5C3F90048852E /* Sources */,
-				324CB1CD2BF5C3F90048852E /* Frameworks */,
-				324CB1CE2BF5C3F90048852E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				324CB1D22BF5C3F90048852E /* PBXTargetDependency */,
-			);
-			name = LuckyMapTests;
-			productName = LuckyMapTests;
-			productReference = 324CB1D02BF5C3F90048852E /* LuckyMapTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		324CB1D92BF5C3F90048852E /* LuckyMapUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 324CB1EA2BF5C3F90048852E /* Build configuration list for PBXNativeTarget "LuckyMapUITests" */;
-			buildPhases = (
-				324CB1D62BF5C3F90048852E /* Sources */,
-				324CB1D72BF5C3F90048852E /* Frameworks */,
-				324CB1D82BF5C3F90048852E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				324CB1DC2BF5C3F90048852E /* PBXTargetDependency */,
-			);
-			name = LuckyMapUITests;
-			productName = LuckyMapUITests;
-			productReference = 324CB1DA2BF5C3F90048852E /* LuckyMapUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -196,14 +174,6 @@
 					324CB1B92BF5C3F80048852E = {
 						CreatedOnToolsVersion = 15.3;
 					};
-					324CB1CF2BF5C3F90048852E = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 324CB1B92BF5C3F80048852E;
-					};
-					324CB1D92BF5C3F90048852E = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 324CB1B92BF5C3F80048852E;
-					};
 				};
 			};
 			buildConfigurationList = 324CB1B52BF5C3F80048852E /* Build configuration list for PBXProject "LuckyMap" */;
@@ -215,13 +185,13 @@
 				Base,
 			);
 			mainGroup = 324CB1B12BF5C3F80048852E;
+			packageReferences = (
+			);
 			productRefGroup = 324CB1BB2BF5C3F80048852E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				324CB1B92BF5C3F80048852E /* LuckyMap */,
-				324CB1CF2BF5C3F90048852E /* LuckyMapTests */,
-				324CB1D92BF5C3F90048852E /* LuckyMapUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,25 +203,52 @@
 			files = (
 				324CB1C72BF5C3F90048852E /* Assets.xcassets in Resources */,
 				324CB1CA2BF5C3F90048852E /* Base in Resources */,
-				324CB1C52BF5C3F80048852E /* Base in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		324CB1CE2BF5C3F90048852E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		324CB1D82BF5C3F90048852E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		98BA44604F85750779C4B0BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckyMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB524EA9568008426445BC7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyMap/Pods-LuckyMap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyMap/Pods-LuckyMap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LuckyMap/Pods-LuckyMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		324CB1B62BF5C3F80048852E /* Sources */ = {
@@ -259,52 +256,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				324CB1C22BF5C3F80048852E /* ViewController.swift in Sources */,
+				324CB1EE2BF5C4CE0048852E /* MapView.swift in Sources */,
 				324CB1BE2BF5C3F80048852E /* AppDelegate.swift in Sources */,
+				323F6A642BF5ECDB00C72CC6 /* LottoViewController.swift in Sources */,
+				323F6A612BF5EC5C00C72CC6 /* TabBarViewController.swift in Sources */,
 				324CB1C02BF5C3F80048852E /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		324CB1CC2BF5C3F90048852E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				324CB1D52BF5C3F90048852E /* LuckyMapTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		324CB1D62BF5C3F90048852E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				324CB1E12BF5C3F90048852E /* LuckyMapUITestsLaunchTests.swift in Sources */,
-				324CB1DF2BF5C3F90048852E /* LuckyMapUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		324CB1D22BF5C3F90048852E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 324CB1B92BF5C3F80048852E /* LuckyMap */;
-			targetProxy = 324CB1D12BF5C3F90048852E /* PBXContainerItemProxy */;
-		};
-		324CB1DC2BF5C3F90048852E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 324CB1B92BF5C3F80048852E /* LuckyMap */;
-			targetProxy = 324CB1DB2BF5C3F90048852E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		324CB1C32BF5C3F80048852E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				324CB1C42BF5C3F80048852E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		324CB1C82BF5C3F90048852E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,17 +399,18 @@
 		};
 		324CB1E52BF5C3F90048852E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E3DDFD373E6D0B78806CA2A /* Pods-LuckyMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8SM853QWD8;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LuckyMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,17 +428,18 @@
 		};
 		324CB1E62BF5C3F90048852E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45B39874B5059897B65CEA14 /* Pods-LuckyMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8SM853QWD8;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LuckyMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,82 +452,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		324CB1E82BF5C3F90048852E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8SM853QWD8;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.sb.LuckyMapTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LuckyMap";
-			};
-			name = Debug;
-		};
-		324CB1E92BF5C3F90048852E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8SM853QWD8;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.sb.LuckyMapTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LuckyMap";
-			};
-			name = Release;
-		};
-		324CB1EB2BF5C3F90048852E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8SM853QWD8;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.sb.LuckyMapUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LuckyMap;
-			};
-			name = Debug;
-		};
-		324CB1EC2BF5C3F90048852E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8SM853QWD8;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.sb.LuckyMapUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LuckyMap;
 			};
 			name = Release;
 		};
@@ -584,24 +472,6 @@
 			buildConfigurations = (
 				324CB1E52BF5C3F90048852E /* Debug */,
 				324CB1E62BF5C3F90048852E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		324CB1E72BF5C3F90048852E /* Build configuration list for PBXNativeTarget "LuckyMapTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				324CB1E82BF5C3F90048852E /* Debug */,
-				324CB1E92BF5C3F90048852E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		324CB1EA2BF5C3F90048852E /* Build configuration list for PBXNativeTarget "LuckyMapUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				324CB1EB2BF5C3F90048852E /* Debug */,
-				324CB1EC2BF5C3F90048852E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
