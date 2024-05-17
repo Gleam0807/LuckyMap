@@ -149,14 +149,13 @@
 				324CB1B72BF5C3F80048852E /* Frameworks */,
 				324CB1B82BF5C3F80048852E /* Resources */,
 				DB524EA9568008426445BC7F /* [CP] Embed Pods Frameworks */,
+				28EF2FAFFFCFF685348E0853 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LuckyMap;
-			packageProductDependencies = (
-			);
 			productName = LuckyMap;
 			productReference = 324CB1BA2BF5C3F80048852E /* LuckyMap.app */;
 			productType = "com.apple.product-type.application";
@@ -185,8 +184,6 @@
 				Base,
 			);
 			mainGroup = 324CB1B12BF5C3F80048852E;
-			packageReferences = (
-			);
 			productRefGroup = 324CB1BB2BF5C3F80048852E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,6 +206,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		28EF2FAFFFCFF685348E0853 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyMap/Pods-LuckyMap-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyMap/Pods-LuckyMap-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LuckyMap/Pods-LuckyMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		98BA44604F85750779C4B0BC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

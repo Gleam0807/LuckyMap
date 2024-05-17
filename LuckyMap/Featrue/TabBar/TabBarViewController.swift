@@ -27,7 +27,7 @@ class TabBarViewController: UITabBarController {
      // MARK: - Tabbar 화면이동 및 눌렸을때/눌리지 않았을때 이미지 Set
      func setAttribute() {
          viewControllers = [
-           createNavController(for: ViewController(), title: "", image: UIImage(systemName: "map")!, selectedImage: UIImage(systemName: "map.fill")!),
+            createNavController(for: ViewController(), title: "", image: UIImage(systemName: "map")!, selectedImage: UIImage(systemName: "map.fill")!),
            createNavController(for: LottoViewController(), title: "", image: UIImage(systemName: "list.bullet.rectangle")!, selectedImage: UIImage(systemName: "message")!)
          ]
      }

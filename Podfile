@@ -5,7 +5,7 @@ target 'LuckyMap' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'NMapsMap'
+  pod 'KakaoMapsSDK', '2.10.4'
   pod 'SnapKit', '~> 5.0.0'
 
 end

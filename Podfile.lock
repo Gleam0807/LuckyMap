@@ -1,24 +1,20 @@
 PODS:
-  - NMapsGeometry (1.0.2)
-  - NMapsMap (3.18.1):
-    - NMapsGeometry
+  - KakaoMapsSDK (2.10.4)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - NMapsMap
+  - KakaoMapsSDK (= 2.10.4)
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
-    - NMapsGeometry
-    - NMapsMap
+    - KakaoMapsSDK
     - SnapKit
 
 SPEC CHECKSUMS:
-  NMapsGeometry: 4e02554fa9880ef02ed96b075dc84355d6352479
-  NMapsMap: e879088eeee2d1e3b97f0a609076e1824dce2cad
+  KakaoMapsSDK: 6ceb9740762945bcefb1cdb61123e48abf6e6a5d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 7c32030fcda98b5efc080eebbabd0d4b114cc0fd
+PODFILE CHECKSUM: 623bd609e52edbbec5d4f95a06ba49cd6a69bd87
 
 COCOAPODS: 1.15.2
