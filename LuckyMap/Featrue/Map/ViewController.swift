@@ -9,7 +9,8 @@ import UIKit
 import KakaoMapsSDK
 
 
-class ViewController: UIViewController, MapControllerDelegate {
+class ViewController: UIViewController {
+    //var mapContainer: KMViewContainer?
     var mapController: KMController?
     var _observerAdded: Bool?
     var _auth: Bool?
@@ -42,8 +43,9 @@ class ViewController: UIViewController, MapControllerDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        set()
         
+        set()
+        //mapContainer = self.view as? KMViewContainer
         //KMController 생성.
         mapController = KMController(viewContainer: mapContainer)
         mapController!.delegate = self
@@ -78,71 +80,8 @@ class ViewController: UIViewController, MapControllerDelegate {
         view.addSubview(mapContainer)
         
         mapContainer.snp.makeConstraints { make in
-            make.top.leading.trailing.bottom.equalToSuperview().offset(0)
+            make.top.leading.trailing.bottom.equalToSuperview().inset(0)
         }
-    }
-    
-    // 인증 실패시 호출.
-    func authenticationFailed(_ errorCode: Int, desc: String) {
-        print("error code: \(errorCode)")
-        print("desc: \(desc)")
-        _auth = false
-        switch errorCode {
-        case 400:
-            showToast(self.view, message: "지도 종료(API인증 파라미터 오류)")
-            break;
-        case 401:
-            showToast(self.view, message: "지도 종료(API인증 키 오류)")
-            break;
-        case 403:
-            showToast(self.view, message: "지도 종료(API인증 권한 오류)")
-            break;
-        case 429:
-            showToast(self.view, message: "지도 종료(API 사용쿼터 초과)")
-            break;
-        case 499:
-            showToast(self.view, message: "지도 종료(네트워크 오류) 5초 후 재시도..")
-            
-            // 인증 실패 delegate 호출 이후 5초뒤에 재인증 시도..
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-                print("retry auth...")
-                
-                self.mapController?.prepareEngine()
-            }
-            break;
-        default:
-            break;
-        }
-    }
-    
-    func addViews() {
-        //여기에서 그릴 View(KakaoMap, Roadview)들을 추가한다.
-        let defaultPosition: MapPoint = MapPoint(longitude: 127.108678, latitude: 37.402001)
-        //지도(KakaoMap)를 그리기 위한 viewInfo를 생성
-        let mapviewInfo: MapviewInfo = MapviewInfo(viewName: "mapview", viewInfoName: "map", defaultPosition: defaultPosition, defaultLevel: 7)
-        
-        //KakaoMap 추가.
-        mapController?.addView(mapviewInfo)
-    }
-    
-    //addView 성공 이벤트 delegate. 추가적으로 수행할 작업을 진행한다.
-    func addViewSucceeded(_ viewName: String, viewInfoName: String) {
-        print("OK") //추가 성공. 성공시 추가적으로 수행할 작업을 진행한다.
-    }
-    
-    //addView 실패 이벤트 delegate. 실패에 대한 오류 처리를 진행한다.
-    func addViewFailed(_ viewName: String, viewInfoName: String) {
-        print("Failed")
-    }
-    
-    //Container 뷰가 리사이즈 되었을때 호출된다. 변경된 크기에 맞게 ViewBase들의 크기를 조절할 필요가 있는 경우 여기에서 수행한다.
-    func containerDidResized(_ size: CGSize) {
-        let mapView: KakaoMap? = mapController?.getView("mapview") as? KakaoMap
-        mapView?.viewRect = CGRect(origin: CGPoint(x: 0.0, y: 0.0), size: size)   //지도뷰의 크기를 리사이즈된 크기로 지정한다.
-    }
-    
-    func viewWillDestroyed(_ view: ViewBase) {
-        
     }
     
     func addObservers(){
@@ -187,6 +126,78 @@ class ViewController: UIViewController, MapControllerDelegate {
                        completion: { (finished) in
             toastLabel.removeFromSuperview()
         })
+    }
+}
+
+extension ViewController: MapControllerDelegate {
+    // 인증 실패시 호출.
+    func authenticationFailed(_ errorCode: Int, desc: String) {
+        print("error code: \(errorCode)")
+        print("desc: \(desc)")
+        _auth = false
+        switch errorCode {
+        case 400:
+            showToast(self.view, message: "지도 종료(API인증 파라미터 오류)")
+            break;
+        case 401:
+            showToast(self.view, message: "지도 종료(API인증 키 오류)")
+            break;
+        case 403:
+            showToast(self.view, message: "지도 종료(API인증 권한 오류)")
+            break;
+        case 429:
+            showToast(self.view, message: "지도 종료(API 사용쿼터 초과)")
+            break;
+        case 499:
+            showToast(self.view, message: "지도 종료(네트워크 오류) 5초 후 재시도..")
+            
+            // 인증 실패 delegate 호출 이후 5초뒤에 재인증 시도..
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                print("retry auth...")
+                
+                self.mapController?.prepareEngine()
+            }
+            break;
+        default:
+            break;
+        }
+    }
+    
+    func addViews() {
+        //여기에서 그릴 View(KakaoMap, Roadview)들을 추가한다.
+        let defaultPosition: MapPoint = MapPoint(longitude: 127.108678, latitude: 37.402001)
+        //지도(KakaoMap)를 그리기 위한 viewInfo를 생성
+        let mapviewInfo: MapviewInfo = MapviewInfo(viewName: "mapview", viewInfoName: "map", defaultPosition: defaultPosition, defaultLevel: 7)
+        
+        //KakaoMap 추가.
+        mapController?.addView(mapviewInfo)
+    }
+    
+    func viewInit(viewName: String) {
+        print("OK")
+    }
+    
+    //addView 성공 이벤트 delegate. 추가적으로 수행할 작업을 진행한다.
+    func addViewSucceeded(_ viewName: String, viewInfoName: String) {
+        let view = mapController?.getView("mapview") as! KakaoMap
+        view.viewRect = mapContainer.bounds    //뷰 add 도중에 resize 이벤트가 발생한 경우 이벤트를 받지 못했을 수 있음. 원하는 뷰 사이즈로 재조정.
+        viewInit(viewName: viewName)
+        print("OK") //추가 성공. 성공시 추가적으로 수행할 작업을 진행한다.
+    }
+    
+    //addView 실패 이벤트 delegate. 실패에 대한 오류 처리를 진행한다.
+    func addViewFailed(_ viewName: String, viewInfoName: String) {
+        print("Failed")
+    }
+    
+    //Container 뷰가 리사이즈 되었을때 호출된다. 변경된 크기에 맞게 ViewBase들의 크기를 조절할 필요가 있는 경우 여기에서 수행한다.
+    func containerDidResized(_ size: CGSize) {
+        let mapView: KakaoMap? = mapController?.getView("mapview") as? KakaoMap
+        mapView?.viewRect = CGRect(origin: CGPoint(x: 0.0, y: 0.0), size: size)   //지도뷰의 크기를 리사이즈된 크기로 지정한다.
+    }
+    
+    func viewWillDestroyed(_ view: ViewBase) {
+        
     }
 }
 
