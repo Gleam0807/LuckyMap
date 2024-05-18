@@ -10,7 +10,6 @@ import KakaoMapsSDK
 
 
 class ViewController: UIViewController {
-    //var mapContainer: KMViewContainer?
     var mapController: KMController?
     var _observerAdded: Bool?
     var _auth: Bool?
@@ -45,7 +44,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         set()
-        //mapContainer = self.view as? KMViewContainer
+        
         //KMController 생성.
         mapController = KMController(viewContainer: mapContainer)
         mapController!.delegate = self
