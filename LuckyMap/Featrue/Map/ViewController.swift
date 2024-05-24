@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 import KakaoMapsSDK
 
 
@@ -14,6 +15,8 @@ class ViewController: UIViewController {
     var _observerAdded: Bool?
     var _auth: Bool?
     var _appear: Bool?
+    
+    var dataSource = [Document]()
     
     /// MARK:
     lazy var mapContainer: KMViewContainer = {
@@ -44,6 +47,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         set()
+        restAPITest()
         
         //KMController 생성.
         mapController = KMController(viewContainer: mapContainer)
@@ -164,7 +168,7 @@ extension ViewController: MapControllerDelegate {
     
     func addViews() {
         //여기에서 그릴 View(KakaoMap, Roadview)들을 추가한다.
-        let defaultPosition: MapPoint = MapPoint(longitude: 127.108678, latitude: 37.402001)
+        let defaultPosition: MapPoint = MapPoint(longitude: 127.1184, latitude: 37.6292)
         //지도(KakaoMap)를 그리기 위한 viewInfo를 생성
         let mapviewInfo: MapviewInfo = MapviewInfo(viewName: "mapview", viewInfoName: "map", defaultPosition: defaultPosition, defaultLevel: 7)
         
@@ -197,6 +201,39 @@ extension ViewController: MapControllerDelegate {
     
     func viewWillDestroyed(_ view: ViewBase) {
         
+    }
+    
+    func restAPITest() {
+        let url = "https://dapi.kakao.com/v2/local/search/keyword.json?sort=accuracy&page=45&size=10&query=%EB%A1%9C%EB%98%90"
+        let headers : HTTPHeaders = [
+            "Content-Type": "application/x-www-form-urlencoded;charset=utf-8",
+            "Authorization": "KakaoAK 0c3a0e70e5482c6199faa6c39ec93f2b",
+        ]
+        
+        let parameters : [String: Any] = [
+                    "query": "로또",
+                    "page": 45,
+                    "size": 15
+                ]
+        
+        AF.request(url,
+                   method: .get,
+                   parameters: parameters,
+                   encoding: URLEncoding.default,
+                   headers: headers)
+        .validate(statusCode: 200..<300)
+        .responseDecodable(of: Response.self) { response in
+            switch response.result {
+            case .success(let res):
+//                self.dataSource = res.documents
+//                print(self.dataSource)
+                let coordinates = res.documents.map { ($0.x, $0.y) }
+                print(coordinates)
+                
+            case .failure(let error):
+                print("Request failed with error: \(error)")
+            }
+        }
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32163FC92C0045940023F280 /* KakaoMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32163FC82C0045940023F280 /* KakaoMap.swift */; };
 		323F6A612BF5EC5C00C72CC6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F6A602BF5EC5C00C72CC6 /* TabBarViewController.swift */; };
 		323F6A642BF5ECDB00C72CC6 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F6A632BF5ECDB00C72CC6 /* LottoViewController.swift */; };
 		324CB1BE2BF5C3F80048852E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CB1BD2BF5C3F80048852E /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0E3DDFD373E6D0B78806CA2A /* Pods-LuckyMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyMap.debug.xcconfig"; path = "Target Support Files/Pods-LuckyMap/Pods-LuckyMap.debug.xcconfig"; sourceTree = "<group>"; };
+		32163FC82C0045940023F280 /* KakaoMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMap.swift; sourceTree = "<group>"; };
 		323F6A602BF5EC5C00C72CC6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		323F6A632BF5ECDB00C72CC6 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		324CB1BA2BF5C3F80048852E /* LuckyMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,14 @@
 				45B39874B5059897B65CEA14 /* Pods-LuckyMap.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		32163FC72C00457A0023F280 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32163FC82C0045940023F280 /* KakaoMap.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		323F6A5B2BF5E9EE00C72CC6 /* Featrue */ = {
@@ -120,6 +130,7 @@
 		324CB1BC2BF5C3F80048852E /* LuckyMap */ = {
 			isa = PBXGroup;
 			children = (
+				32163FC72C00457A0023F280 /* Model */,
 				323F6A5C2BF5EA0B00C72CC6 /* Resource */,
 				323F6A5B2BF5E9EE00C72CC6 /* Featrue */,
 				324CB1BD2BF5C3F80048852E /* AppDelegate.swift */,
@@ -273,6 +284,7 @@
 				324CB1EE2BF5C4CE0048852E /* MapView.swift in Sources */,
 				324CB1BE2BF5C3F80048852E /* AppDelegate.swift in Sources */,
 				323F6A642BF5ECDB00C72CC6 /* LottoViewController.swift in Sources */,
+				32163FC92C0045940023F280 /* KakaoMap.swift in Sources */,
 				323F6A612BF5EC5C00C72CC6 /* TabBarViewController.swift in Sources */,
 				324CB1C02BF5C3F80048852E /* SceneDelegate.swift in Sources */,
 			);

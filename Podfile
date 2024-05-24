@@ -7,5 +7,6 @@ target 'LuckyMap' do
 
   pod 'KakaoMapsSDK', '2.10.4'
   pod 'SnapKit', '~> 5.0.0'
+  pod 'Alamofire', '~> 5.6.4'
 
 end
