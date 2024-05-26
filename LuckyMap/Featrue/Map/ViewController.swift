@@ -215,7 +215,7 @@ extension ViewController: MapControllerDelegate {
         
         let parameters : [String: Any] = [
                     "query": "로또",
-                    "page": 40,
+                    "page": 45,
                     "size": 15
                 ]
         
