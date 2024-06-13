@@ -39,7 +39,7 @@ class TabBarViewController: UITabBarController {
          navController.tabBarItem.title = title
          navController.tabBarItem.image = image
          navController.tabBarItem.selectedImage = selectedImage
-         navController.interactivePopGestureRecognizer?.delegate = nil // 스와이프 제스처
+         navController.interactivePopGestureRecognizer?.delegate = nil // 스와이프 제스처 enable true
          return navController
      }
 }
