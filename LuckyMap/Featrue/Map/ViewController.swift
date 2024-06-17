@@ -228,8 +228,6 @@ extension ViewController: MapControllerDelegate {
         .responseDecodable(of: Response.self) { response in
             switch response.result {
             case .success(let res):
-//                self.dataSource = res.documents
-//                print(self.dataSource)
                 let coordinates = res.documents.map { ($0.x, $0.y) }
                 print(coordinates)
                 
