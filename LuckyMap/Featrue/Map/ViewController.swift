@@ -170,7 +170,7 @@ extension ViewController: MapControllerDelegate {
         //여기에서 그릴 View(KakaoMap, Roadview)들을 추가한다.
         let defaultPosition: MapPoint = MapPoint(longitude: 127.1184, latitude: 37.6292)
         //지도(KakaoMap)를 그리기 위한 viewInfo를 생성
-        let mapviewInfo: MapviewInfo = MapviewInfo(viewName: "mapview", viewInfoName: "map", defaultPosition: defaultPosition, defaultLevel: 7)
+        let mapviewInfo: MapviewInfo = MapviewInfo(viewName: "mapview", viewInfoName: "map", defaultPosition: defaultPosition, defaultLevel: 5)
         
         //KakaoMap 추가.
         mapController?.addView(mapviewInfo)
@@ -178,6 +178,9 @@ extension ViewController: MapControllerDelegate {
     
     func viewInit(viewName: String) {
         print("OK")
+        createLabelLayer()
+        createPoiStyle()
+        createPois()
     }
     
     //addView 성공 이벤트 delegate. 추가적으로 수행할 작업을 진행한다.
@@ -212,7 +215,7 @@ extension ViewController: MapControllerDelegate {
         
         let parameters : [String: Any] = [
                     "query": "로또",
-                    "page": 45,
+                    "page": 40,
                     "size": 15
                 ]
         
@@ -234,6 +237,40 @@ extension ViewController: MapControllerDelegate {
                 print("Request failed with error: \(error)")
             }
         }
+    }
+    
+    // POI가 속할 LabelLayer를 생성한다.
+    func createLabelLayer() {
+        let view = mapController?.getView("mapview") as! KakaoMap
+        let manager = view.getLabelManager()
+        let layerOption = LabelLayerOptions(layerID: "PoiLayer", competitionType: .none, competitionUnit: .poi, orderType: .rank, zOrder: 10001)
+        let _ = manager.addLabelLayer(option: layerOption)
+    }
+    
+    func createPoiStyle() {
+        let view = mapController?.getView("mapview") as! KakaoMap
+        let manager = view.getLabelManager()
+        let iconStyle = PoiIconStyle(symbol: UIImage(systemName: "message"), anchorPoint: CGPoint(x: 0.0, y: 0.5))
+        let perLevelStyle = PerLevelPoiStyle(iconStyle: iconStyle, level: 0)  // 이 스타일이 적용되기 시작할 레벨.
+        let poiStyle = PoiStyle(styleID: "customStyle1", styles: [perLevelStyle])
+        manager.addPoiStyle(poiStyle)
+    }
+    
+    // POI를 생성한다.
+    func createPois() {
+        let view = mapController?.getView("mapview") as! KakaoMap
+        let manager = view.getLabelManager()
+        let layer = manager.getLabelLayer(layerID: "PoiLayer")   // 생성한 POI를 추가할 레이어를 가져온다.
+        let poiOption = PoiOptions(styleID: "customStyle1") // 생성할 POI의 Option을 지정하기 위한 자료를 담는 클래스를 생성. 사용할 스타일의 ID를 지정한다.
+        poiOption.rank = 0
+        
+        // Marker 생성
+        let poi1 = layer?.addPoi(option: poiOption, at: MapPoint(longitude: 127.1184, latitude: 37.6292), callback: {(_ poi: (Poi?)) -> Void in
+            print("")
+        }
+        )   //레이어에 지정한 옵션 및 위치로 POI를 추가한다.
+        
+        poi1?.show()
     }
 }
 
