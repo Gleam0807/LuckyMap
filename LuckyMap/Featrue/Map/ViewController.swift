@@ -265,7 +265,7 @@ extension ViewController: MapControllerDelegate {
         poiOption.rank = 0
         
         // Marker 생성
-        let poi1 = layer?.addPoi(option: poiOption, at: MapPoint(longitude: 127.1184, latitude: 37.6292), callback: {(_ poi: (Poi?)) -> Void in
+        let poi1 = layer?.addPoi(option: poiOption, at: MapPoint(longitude: 127.1284, latitude: 37.6292), callback: {(_ poi: (Poi?)) -> Void in
             print("")
         }
         )   //레이어에 지정한 옵션 및 위치로 POI를 추가한다.
